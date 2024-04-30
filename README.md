@@ -1,2 +1,2 @@
-# GetMode_Barber
-A Web-based booking system for GetMode Barber.
+# GentMode_Barbers
+A Web-based booking system for GentMode Barbers.
