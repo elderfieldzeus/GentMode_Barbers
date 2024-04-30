@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face {
+    font-family: 'Julius Sans One';
+    src: url("../assets/fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf");
+}
+
+/*DEFAULT STYLES*/
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* LANDING PAGE STYLE */
+
+.landing_page {
+    height: 100vh;
+    background-image: url("../assets/images/landing_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+nav,
+.anchors > a
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.anchors {
+    display: flex;
+    gap: 4vw;
+}
+
+#logo {
+    height: 15vh;
+    width: auto;
+    position: absolute;
+    left: 0;
+}
+
+#book_button {
+    position: absolute;
+    right: 2vw;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1.5vh 4vh;
+    cursor: pointer;
+}
+
+#company_name {
+    font-family: 'Julius Sans One';
+    font-size: 150px;
+    color: white;
+    position: fixed;
+    left: 7.5vh;
+    top: calc(50% + 7vh);
+    transform: translate(0%, -50%);
+}
