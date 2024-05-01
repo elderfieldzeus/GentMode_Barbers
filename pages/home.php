@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    require_once 'auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,31 +10,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GentMode Barbers</title>
-    <link rel="icon" type="image" href="./assets/images/logo.png">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/svg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/svg.css">
 </head>
 
 <body>
     <!-- LANDING PAGE -->
     <section class="landing_page">
-        <!-- NAV BAR -->
-        <nav>
-            <img id="logo" src="./assets/images/logo.png" alt="GentMode Barbers Logo">
+<!-- NAV BAR -->
+<nav>
+    <img id="logo" src="../assets/images/logo.png" alt="GentMode Barbers Logo">
 
-            <!-- anchor tags -->
-            <div class="anchors">
-                <a href="#" id="home_anchor">Home</a>
-                <a href="#" id="services_anchor">Services</a>
-                <a href="#" id="about_anchor">About</a>
-                <a href="#" id="contact_anchor">Contact</a>
+    <!-- anchor tags -->
+    <div class="anchors">
+        <a href="#" id="home_anchor">Home</a>
+        <a href="#" id="services_anchor">Services</a>
+        <a href="#" id="about_anchor">About</a>
+        <a href="#" id="contact_anchor">Contact</a>
+    </div>
+
+            <!-- Dropdown container -->
+            <div class="dropdown">
+                <!-- Font Awesome user icon -->
+                <i class="fas fa-user"></i>
+                <!-- Dropdown content -->
+                <div class="dropdown-content">
+                    <a href="../pages/logout.php">Logout</a>
+                </div>
             </div>
 
-            <a href="./pages/login.php"><button id="book_button" type="button">Login</button></a>
-        </nav>
+    <button id="book_button" type="button">Book Now</button>
+</nav>
 
 
-        <!-- company name -->
+        <!-- COMPANY NAME -->
         <p id="company_name">GENTMODE</br>BARBER</p>
     </section>
 
@@ -49,7 +65,7 @@
             <!-- CARD TEMPLATE -->
             <div class="card card1">
                 <!-- image -->
-                <img src="./assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/shave.png" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
@@ -68,7 +84,7 @@
 
             <div class="card card2">
                 <!-- image -->
-                <img src="./assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/shave.png" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
@@ -87,7 +103,7 @@
 
             <div class="card card3">
                 <!-- image -->
-                <img src="./assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/shave.png" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
@@ -106,7 +122,7 @@
 
             <div class="card card4">
                 <!-- image -->
-                <img src="./assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/shave.png" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
@@ -135,7 +151,7 @@
     <!-- OUR STORY -->
     <section class="our_story">
         <!-- about pic -->
-        <img src="./assets/images/about_pic.jpg" alt="GentMode Cut">
+        <img src="../assets/images/about_pic.jpg" alt="GentMode Cut">
 
         <div class="story">
             <p class="title">Our Story</p>
@@ -151,16 +167,16 @@
         <!-- form container -->
         <div class="form_container">
             <!-- actual form -->
-            <form class="contact_form" action="submit">
+            <form class="contact_form" action="../pages/process.php" method="post">
                 <label for="name">fullname (family name, first name, middle name) :</label>
-                <input id="name" type="text">
+                <input id="name" type="text" name="fullname">
                 <label for="email">email address : </label>
-                <input id="email" type="email">
-                <label for="number">contact number :</label>
-                <input id="number" type="text">
+                <input id="email" type="email" name="email">
+                <label for="number">Subject :</label>
+                <input id="number" type="text" name="subject">
                 <label for="message">message:</label>
                 <textarea name="message" id="message" rows="2"></textarea>
-                <button type="submit" id="form_submit">SUBMIT</button>
+                <input type="submit" id="form_submit" value="SUBMIT" name="submit">
             </form>
             <!-- social media -->
             <div class="socials">
@@ -226,6 +242,7 @@
         <!-- insert socials if necessary -->
         <p>socials</p>
     </section>
+
 </body>
 
 </html>

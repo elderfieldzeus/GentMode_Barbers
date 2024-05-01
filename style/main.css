@@ -13,13 +13,16 @@
     src: url("../assets/fonts/Judson/Judson-Regular.ttf");
 }
 
+
 /*DEFAULT STYLES*/
 
 html {
     font-size: 62.5%;
 }
 
-*, ::before, ::after {
+*,
+ ::before,
+ ::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -40,20 +43,20 @@ a {
 .what_is_gentmode,
 .contact_us,
 #form_submit,
-.contact_form > input,
-#message
-{
+.contact_form>input,
+#message {
     font-family: 'Julius Sans One';
 }
 
 .story,
 .footer_one,
-.newsletter_form > #email,
-.newsletter_form > #subscribe_button,
-.footer_two
-{
+.newsletter_form>#email,
+.newsletter_form>#subscribe_button,
+.footer_two {
     font-family: 'Judson';
 }
+
+
 /* LANDING PAGE STYLE */
 
 .landing_page {
@@ -62,13 +65,11 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     position: relative;
 }
 
 nav,
-.anchors > a
-{
+.anchors>a {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     color: white;
@@ -118,7 +119,9 @@ nav {
     transform: translate(0%, -50%);
 }
 
+
 /* SERVICE PAGE */
+
 .service_page {
     height: 115vh;
     width: 100%;
@@ -169,7 +172,7 @@ nav {
     border-radius: .5rem;
 }
 
-.card > img {
+.card>img {
     height: 40%;
     width: 100%;
 }
@@ -193,7 +196,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
 .icon_container .shadow {
     width: 10vh;
@@ -223,7 +226,9 @@ nav {
     font-size: 1.3rem;
 }
 
+
 /* WHAT IS GENMODE */
+
 .what_is_gentmode {
     width: 100%;
     height: 70vh;
@@ -241,11 +246,13 @@ nav {
     background-color: rgba(0, 0, 0, 0.663);
 }
 
-.filter > p{
+.filter>p {
     font-size: 7.0rem;
 }
 
+
 /* OUR STORY */
+
 .our_story {
     width: 100%;
     height: 80vh;
@@ -277,7 +284,9 @@ nav {
     font-size: 1.6rem;
 }
 
+
 /* CONTACT US */
+
 .contact_us {
     width: 100%;
     height: 85vh;
@@ -295,7 +304,7 @@ nav {
     justify-content: space-between;
     background-color: #3B3939;
     border-radius: 3.3rem;
-} 
+}
 
 .contact_form {
     display: flex;
@@ -308,7 +317,8 @@ nav {
     position: relative;
 }
 
-.contact_form > input, #message{
+.contact_form>input,
+#message {
     background-color: #D9D9D9;
     outline: none;
     border: none;
@@ -355,7 +365,9 @@ nav {
     font-size: 1.6rem;
 }
 
+
 /* FOOTER ONE */
+
 .footer_one {
     color: black;
     width: 100%;
@@ -407,7 +419,9 @@ nav {
     padding: 0 .5rem;
 }
 
+
 /* FOOTER TWO */
+
 .footer_two {
     width: 100%;
     height: 15vh;
