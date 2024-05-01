@@ -8,6 +8,11 @@
     src: url("../assets/fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Judson';
+    src: url("../assets/fonts/Judson/Judson-Regular.ttf");
+}
+
 /*DEFAULT STYLES*/
 
 *, ::before, ::after {
@@ -28,11 +33,18 @@ a {
 
 #company_name,
 .service_page,
-.what_is_gentmode
+.what_is_gentmode,
+.contact_us,
+#form_submit,
+form > input,
+#message
 {
     font-family: 'Julius Sans One';
 }
 
+.story {
+    font-family: 'Judson';
+}
 /* LANDING PAGE STYLE */
 
 .landing_page {
@@ -101,7 +113,6 @@ nav {
 .service_page {
     height: 115vh;
     width: 100%;
-    background-color: #424141;
     position: relative;
     padding: 8vw 10vw;
 }
@@ -187,11 +198,11 @@ nav {
     color: black;
 }
 
-.title {
+.content .title {
     font-size: 20px;
 }
 
-.description {
+.content .description {
     font-size: 13px;
 }
 
@@ -215,4 +226,114 @@ nav {
 
 .filter > p{
     font-size: 70px;
+}
+
+/* OUR STORY */
+.our_story {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+    padding: 15vh 15vw 5vh;
+}
+
+.our_story img {
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+}
+
+.story .title {
+    font-size: 30px;
+}
+
+.story .description {
+    font-size: 16;
+}
+
+/* CONTACT US */
+.contact_us {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 8vw 10vh;
+}
+
+.form_container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 2vh 6vh;
+    justify-content: space-between;
+    background-color: #3B3939;
+    border-radius: 33px;
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    font-size: 20px;
+    width: 65%;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+form > input, #message{
+    background-color: #D9D9D9;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    line-height: 2;
+    text-indent: 12px;
+    border-radius: 15px;
+}
+
+#message {
+    resize: none;
+}
+
+#form_submit {
+    background-color: #D9D9D9;
+    align-self: flex-end;
+    font-size: 20px;
+    padding: 1.2vh 4vh;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-top: 1vh;
+}
+
+.socials {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8vh;
+}
+
+.social_container {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+}
+
+.social_container .title {
+    font-size: 16px;
 }

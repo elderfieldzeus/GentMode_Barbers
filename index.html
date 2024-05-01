@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GentMode Barbers</title>
+    <link rel="icon" type="image" href="./assets/images/logo.png">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/svg.css">
 </head>
 <body>
     <!-- LANDING PAGE -->
@@ -24,7 +26,7 @@
             <button id="book_button" type="button">Book Now</button>
         </nav>
 
-        <!-- COMPANY NAME -->
+        <!-- company name -->
         <p id="company_name">GENTMODE</br>BARBER</p>
     </section>
 
@@ -115,6 +117,53 @@
         </div>
     </section>
 
+    <!-- OUR STORY -->
+    <section class="our_story">
+        <!-- about pic -->
+        <img src="./assets/images/about_pic.jpg" alt="GentMode Cut">
 
+        <div class="story">
+            <p class="title">Our Story</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a euismod orci. Vestibulum hendrerit dapibus consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sit amet mi vitae augue pulvinar pulvinar quis luctus nibh. Etiam mattis felis id justo hendrerit, ac interdum magna rutrum. Nunc eget sollicitudin eros. Nunc sed dapibus felis. Suspendisse tristique semper feugiat. Maecenas et ornare massa. Curabitur laoreet risus sed diam gravida blandit. Phasellus eget ex vestibulum, dapibus magna eget, pharetra odio. In nec dui sit amet ligula venenatis vehicula. Fusce tortor nisl, scelerisque quis arcu eu, fermentum condimentum libero. Donec quis sodales eros. Integer laoreet arcu id quam finibus fermentum. Fusce consectetur odio non urna posuere interdum.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="contact_us">
+        <!-- form container -->
+        <div class="form_container">
+            <!-- actual form -->
+            <form action="submit">
+                <label for="name">fullname (family name, first name, middle name) :</label>
+                <input id="name" type="text">
+                <label for="email">email address : </label>
+                <input id="email" type="email">
+                <label for="number">contact number :</label>
+                <input id="number" type="text">
+                <label for="message">message:</label>
+                <textarea name="message" id="message" rows="2"></textarea>
+                <button type="submit" id="form_submit">SUBMIT</button>
+            </form>
+            <!-- social media -->
+            <div class="socials">
+                <div class="social_container">
+                    <svg class="facebook_svg"></svg>
+                    <p class="title">GENT MODE BARBERS</p>
+                </div>
+                <div class="social_container">
+                    <svg class="instagram_svg"></svg>
+                    <p class="title">GENTMODEBARBERS</p>
+                </div>
+                <div class="social_container">
+                    <svg class="location_svg"></svg>
+                    <p class="title">3 Juana Osmeña St,<br>
+                        Baseline, Cebu City,<br>
+                        6000 Cebu, Cebu<br> 
+                        City, Philippines,<br> 
+                        6000</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
