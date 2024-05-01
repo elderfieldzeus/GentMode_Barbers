@@ -56,7 +56,10 @@
 
                 <!-- icon w/shadow-->
                 <div class="icon_container">
-                    <!-- insert svg code here -->
+                    <div class="icon">
+                        <span class="razor_svg"></span>
+                    </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
 
@@ -72,7 +75,10 @@
 
                 <!-- icon w/shadow-->
                 <div class="icon_container">
-                    <!-- insert svg code here -->
+                    <div class="icon">
+                        <span class="razor_svg"></span>
+                    </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
 
@@ -88,7 +94,10 @@
 
                 <!-- icon w/shadow-->
                 <div class="icon_container">
-                    <!-- insert svg code here -->
+                    <div class="icon">
+                        <span class="razor_svg"></span>
+                    </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
 
@@ -104,7 +113,10 @@
 
                 <!-- icon w/shadow-->
                 <div class="icon_container">
-                    <!-- insert svg code here -->
+                    <div class="icon">
+                        <span class="razor_svg"></span>
+                    </div>
+                    <div class="shadow"></div>
                 </div>
             </div>
         </div>
@@ -133,7 +145,7 @@
         <!-- form container -->
         <div class="form_container">
             <!-- actual form -->
-            <form action="submit">
+            <form class="contact_form" action="submit">
                 <label for="name">fullname (family name, first name, middle name) :</label>
                 <input id="name" type="text">
                 <label for="email">email address : </label>
@@ -147,15 +159,15 @@
             <!-- social media -->
             <div class="socials">
                 <div class="social_container">
-                    <svg class="facebook_svg"></svg>
+                    <span class="facebook_svg"></span>
                     <p class="title">GENT MODE BARBERS</p>
                 </div>
                 <div class="social_container">
-                    <svg class="instagram_svg"></svg>
+                    <span class="instagram_svg"></span>
                     <p class="title">GENTMODEBARBERS</p>
                 </div>
                 <div class="social_container">
-                    <svg class="location_svg"></svg>
+                    <span class="location_svg"></span>
                     <p class="title">3 Juana Osmeña St,<br>
                         Baseline, Cebu City,<br>
                         6000 Cebu, Cebu<br> 
@@ -164,6 +176,52 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- FOOTER ONE -->
+    <section class="footer_one">
+        <!-- information, service, contact -->
+        <div class="topic_container">
+            <div class="topic">
+                <p class="title">Information</p>
+                <p class="subtopic">About</p>
+                <p class="subtopic">Services</p>
+                <p class="subtopic">Contact</p>
+            </div>
+
+            <div class="topic">
+                <p class="title">Services</p>
+                <p class="subtopic">Haircut</p>
+                <p class="subtopic">Shave</p>
+                <p class="subtopic">Hair Treatment</p>
+            </div>
+
+            <div class="topic">
+                <p class="title">Contact</p>
+                <p class="subtopic">Phone: (+63)  998 570 2003</p>
+                <p class="subtopic">email: email@domain.com</p>
+                <p class="subtopic">Monday - Friday: 10AM - 8PM<br>Saturday - Sunday: 9AM - 9PM</p>
+            </div>
+
+            <div class="topic">
+                <p class="title">Sign up for our Newsletter</p>
+                <p class="subtopic">Get offers and discounts to your inbox</p>
+
+                <!-- newsletter form -->
+                <form class="newsletter_form" action="submit">
+                    <input id="email" type="email" placeholder="Your Email Address*">
+                    <button id="subscribe_button" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER TWO -->
+    <section class="footer_two">
+        <p>Copyright © 2024 - GentMode Barbers.</p>
+        <p id="created_by">Created by Elderfield, Montera & Rondina</p>
+        <!-- insert socials if necessary -->
+        <p>socials</p>
     </section>
 </body>
 </html>

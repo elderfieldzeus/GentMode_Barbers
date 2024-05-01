@@ -41,3 +41,17 @@
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
+
+.razor_svg {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Crect width='38' height='6' x='3.609' y='36.534' fill='%23000' rx='2' transform='rotate(-10 3.61 36.534)'/%3E%3Cpath d='m44 40l-4-4'/%3E%3Cpath fill='%23000' d='m8 4l18.385 18.385l-4.243 4.242L9.414 13.9c-2.828-2.83-2.828-4.243-2.828-5.657C6.586 6.828 8 4 8 4'/%3E%3Cpath d='m8 4l18 18l9 9'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: black;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
