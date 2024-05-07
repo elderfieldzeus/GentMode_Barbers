@@ -27,8 +27,9 @@
                 break;
             }
 
+            $hash = password_hash($password, PASSWORD_DEFAULT);
             $sql = "INSERT INTO signuo (username, email, phone, password)" .
-                   "VALUES ('$username','$email','$phone','$password')";
+                   "VALUES ('$username','$email','$phone','$hash')";
             $result = $conn->query($sql);
 
             if(!$result){
