@@ -18,6 +18,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -76,14 +77,24 @@ nav,
 }
 
 nav {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
-    top: 0;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
     z-index: 1;
+    transition: background-color 0.3s ease, top 0.3s ease, left 0.3s ease, right 0.3s ease;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.scrolled {
+    background-color: #333;
 }
 
 .anchors {
@@ -98,8 +109,9 @@ nav {
     left: 0;
 }
 
-#book_button {
-    position: absolute;
+#book_button,
+#login_button {
+    /* position: absolute; */
     right: 2vw;
     font-size: 1.8rem;
     color: white;
@@ -108,6 +120,10 @@ nav {
     border-radius: .5rem;
     padding: 1.5vh 4vh;
     cursor: pointer;
+}
+
+#login_button {
+    position: absolute;
 }
 
 #company_name {
@@ -170,11 +186,29 @@ nav {
     width: 18vw;
     background-color: white;
     border-radius: .5rem;
+    overflow: hidden;
 }
 
 .card>img {
     height: 40%;
     width: 100%;
+    object-fit: cover;
+}
+
+.card1>img {
+    object-position: 0 -130px;
+}
+
+.card2>img {
+    object-position: 0 -150px;
+}
+
+.card4>img {
+    object-position: 0 -210px;
+}
+
+.content {
+    padding: 0 2vw;
 }
 
 .icon_container {

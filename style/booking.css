@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url("../assets/images/landing_bg.png");
+    background-size: cover;
+    position: relative;
+}
+
+nav,
+.anchors>a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.anchors {
+    display: flex;
+    gap: 4vw;
+}
+
+#logo {
+    height: 15vh;
+    width: auto;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: 2;
+}
+
+.container {
+    background-color: #c7c5c5;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    opacity: 80%;
+    margin-top: 150px;
+    position: relative;
+    z-index: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#summary {
+    margin-top: 20px;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#booking-form {
+    display: block;
+}
+
+#summary-container {
+    display: none;
+}
+
+.left-div,
+.right-div {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.right-div {
+    margin-right: 0;
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

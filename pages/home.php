@@ -1,8 +1,3 @@
-<?php
-    session_start();
-    require_once 'auth.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GentMode Barbers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image" href="../assets/images/logo.png">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/home.css">
     <link rel="stylesheet" href="../style/svg.css">
@@ -26,22 +22,27 @@
     <!-- anchor tags -->
     <div class="anchors">
         <a href="#" id="home_anchor">Home</a>
-        <a href="#" id="services_anchor">Services</a>
-        <a href="#" id="about_anchor">About</a>
-        <a href="#" id="contact_anchor">Contact</a>
+        <a href="#service" id="services_anchor">Services</a>
+        <a href="#about" id="about_anchor">About</a>
+        <a href="#contact" id="contact_anchor">Contact</a>
     </div>
 
-            <!-- Dropdown container -->
-            <div class="dropdown">
-                <!-- Font Awesome user icon -->
-                <i class="fas fa-user"></i>
-                <!-- Dropdown content -->
-                <div class="dropdown-content">
-                    <a href="../pages/logout.php">Logout</a>
-                </div>
+    <div class="right_nav">
+        <!-- Dropdown container -->
+        <div class="dropdown">
+            <!-- Font Awesome user icon -->
+            <i class="fas fa-user"></i>
+            <!-- Dropdown content -->
+            <div class="dropdown-content">
+                <!--<a href="../pages/account.php">Account</a>-->
+                <a href="../pages/logout.php">Logout</a>
             </div>
+        </div>
 
-    <button id="book_button" type="button">Book Now</button>
+        <a href="./booking.php">
+            <button id="book_button" type="button">Book Now</button>
+        </a>
+    </div>  
 </nav>
 
 
@@ -49,28 +50,27 @@
         <p id="company_name">GENTMODE</br>BARBER</p>
     </section>
 
-    <!-- SERVICE PAGE -->
-    <section class="service_page">
+    <section class="service_page" id="service">
         <!-- left header -->
         <div class="our_services">
             <p id="p1">OUR HANDLING</p>
             <p id="p2">OUR SERVICES</p>
         </div>
 
-        <!-- VIEW MORE -->
-        <button id="view_more" type="button">VIEW MORE</button>
+        <!-- VIEW MORE
+        <button id="view_more" type="button">VIEW MORE</button> -->
 
         <!-- SERVICES -->
         <div class="services">
             <!-- CARD TEMPLATE -->
             <div class="card card1">
                 <!-- image -->
-                <img src="../assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/gentmode_cut.jpg" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
-                    <p class="title">Shave</p>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="title">Gentmode Cut</p>
+                    <p class="description">Shampoo, Back massage, hot towel.</p>
                 </div>
 
                 <!-- icon w/shadow-->
@@ -84,12 +84,12 @@
 
             <div class="card card2">
                 <!-- image -->
-                <img src="../assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/bald_cut.jpg" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
-                    <p class="title">Shave</p>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="title">Bald Cut</p>
+                    <p class="description">Back massage, hot towel.</p>
                 </div>
 
                 <!-- icon w/shadow-->
@@ -103,12 +103,12 @@
 
             <div class="card card3">
                 <!-- image -->
-                <img src="../assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/gentmode_shave.jpg" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
-                    <p class="title">Shave</p>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="title">Gentmode Shave</p>
+                    <p class="description">Facial pleasure.</p>
                 </div>
 
                 <!-- icon w/shadow-->
@@ -122,12 +122,12 @@
 
             <div class="card card4">
                 <!-- image -->
-                <img src="../assets/images/shave.png" alt="GentMode Shave">
+                <img src="../assets/images/treatment.jpg" alt="GentMode Shave">
 
                 <!-- content -->
                 <div class="content">
-                    <p class="title">Shave</p>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="title">Hair Treatment</p>
+                    <p class="description">Anti-dandruff treatment.</p>
                 </div>
 
                 <!-- icon w/shadow-->
@@ -142,7 +142,7 @@
     </section>
 
     <!-- WHAT IS GENTMODE -->
-    <section class="what_is_gentmode">
+    <section class="what_is_gentmode" id="about">
         <div class="filter">
             <p>WHAT IS GENTMODE BARBER?</p>
         </div>
@@ -155,19 +155,16 @@
 
         <div class="story">
             <p class="title">Our Story</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a euismod orci. Vestibulum hendrerit dapibus consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sit amet mi vitae augue
-                pulvinar pulvinar quis luctus nibh. Etiam mattis felis id justo hendrerit, ac interdum magna rutrum. Nunc eget sollicitudin eros. Nunc sed dapibus felis. Suspendisse tristique semper feugiat. Maecenas et ornare massa. Curabitur laoreet
-                risus sed diam gravida blandit. Phasellus eget ex vestibulum, dapibus magna eget, pharetra odio. In nec dui sit amet ligula venenatis vehicula. Fusce tortor nisl, scelerisque quis arcu eu, fermentum condimentum libero. Donec quis sodales
-                eros. Integer laoreet arcu id quam finibus fermentum. Fusce consectetur odio non urna posuere interdum.</p>
+            <p class="description">Nestled in the vibrant heart of Cebu, GentMode Barbers has been a beacon of style and sophistication for a year now. Our barbershop stands as a cornerstone of grooming excellence in this bustling city, offering a haven for gentlemen seeking more than just a haircut. With a year of service under our belt, we've perfected the art of blending classic barbering techniques with contemporary trends, ensuring every client leaves feeling confident and refreshed. Situated in the center of Cebu, our location is not just convenient, but also emblematic of our commitment to serving the diverse needs of our community. Whether it's a classic cut or a modern style, GentMode Barbers invites you to experience the epitome of grooming excellence right here in the heart of Cebu.</p>
         </div>
     </section>
 
     <!-- CONTACT US -->
-    <section class="contact_us">
+    <section class="contact_us" id="contact">
         <!-- form container -->
         <div class="form_container">
             <!-- actual form -->
-            <form class="contact_form" action="../pages/process.php" method="post">
+            <form class="contact_form" id="contact_form" action="../pages/process.php" method="post">
                 <label for="name">fullname (family name, first name, middle name) :</label>
                 <input id="name" type="text" name="fullname">
                 <label for="email">email address : </label>
@@ -176,6 +173,7 @@
                 <input id="number" type="text" name="subject">
                 <label for="message">message:</label>
                 <textarea name="message" id="message" rows="2"></textarea>
+                <div id="contact_message" style="display: none;"></div>
                 <input type="submit" id="form_submit" value="SUBMIT" name="submit">
             </form>
             <!-- social media -->
@@ -203,22 +201,22 @@
         <div class="topic_container">
             <div class="topic">
                 <p class="title">Information</p>
-                <p class="subtopic">About</p>
-                <p class="subtopic">Services</p>
-                <p class="subtopic">Contact</p>
+                <a href="#about"><p class="subtopic">About</p></a>
+                <a href="#service"><p class="subtopic">Services</p></a>
+                <a href="#contact"><p class="subtopic">Contact</p></a>
             </div>
 
             <div class="topic">
                 <p class="title">Services</p>
-                <p class="subtopic">Haircut</p>
-                <p class="subtopic">Shave</p>
-                <p class="subtopic">Hair Treatment</p>
+                <a href="#service"><p class="subtopic">Haircut</p></a>
+                <a href="#service"><p class="subtopic">Shave</p></a>
+                <a href="#service"><p class="subtopic">Hair Treatment</p></a>
             </div>
 
             <div class="topic">
                 <p class="title">Contact</p>
                 <p class="subtopic">Phone: (+63) 998 570 2003</p>
-                <p class="subtopic">email: email@domain.com</p>
+                <p class="subtopic">email: info@apexeldevelopment.com</p>
                 <p class="subtopic">Monday - Friday: 10AM - 8PM<br>Saturday - Sunday: 9AM - 9PM</p>
             </div>
 
@@ -227,10 +225,11 @@
                 <p class="subtopic">Get offers and discounts to your inbox</p>
 
                 <!-- newsletter form -->
-                <form class="newsletter_form" action="submit">
-                    <input id="email" type="email" placeholder="Your Email Address*">
+                <form class="newsletter_form" id="newsletter_form">
+                    <input class="news_email" id="email" type="email" placeholder="Your Email Address*">
                     <button id="subscribe_button" type="submit">SUBSCRIBE</button>
                 </form>
+                <div id="subscribe_message" style="display: none;">Subscribed successfully!</div>
             </div>
         </div>
     </section>
@@ -242,6 +241,8 @@
         <!-- insert socials if necessary -->
         <p>socials</p>
     </section>
+
+    <script src="../script/main.js"></script>
 
 </body>
 

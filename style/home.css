@@ -40,3 +40,12 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.right_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 2vw;
+    gap: 2vw;
+}
