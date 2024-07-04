@@ -19,6 +19,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scrollbar-color: rgb(211, 211, 224) rgb(47, 47, 46);
 }
 
 *,
